@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {    
-    res.render('message', { name: req.body.name });
+    res.send(`<h1>Hola ${req.body.name}!</h1>`);
 });
 
 app.listen(3000, () => console.log('Listening on port 3000!'));
