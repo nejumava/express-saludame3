@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {    
-    res.render('response', { name: req.body.name });
+    res.render('message', { name: req.body.name });
 });
 
 app.listen(3000, () => console.log('Listening on port 3000!'));
